@@ -39,15 +39,17 @@ a.card:hover { border-color: #58f; background: #2c2c34; }
         <h2>nmesh module</h2>
         <span class="tag light">lightweight</span>
         <p>Binary nmesh format. Streaming loader, small payload.
-           Drag &amp; drop .nmesh + .ran files, or loads the bundled demo model.</p>
-        <div class="size">WASM 121 KB &middot; demo model 912 KB</div>
+           Drag &amp; drop a .nmesh with its .ran (and .nmesh.rflex) to play rigid, FFlex
+           and RFlex motion; add .srd/.mmx for stress contours.
+           Keys: F fit, S select zoom, Space play.</p>
+        <div class="size">WASM 583 KB</div>
     </a>
     <a class="card" href="usd/">
         <h2>USD module</h2>
         <span class="tag full">OpenUSD compatible</span>
         <p>Reads .usda (USD ASCII) files. Same rendering core, independent format module.
-           Drag &amp; drop .usda files, or loads the bundled demo.</p>
-        <div class="size">WASM 137 KB &middot; demo model 3.2 MB</div>
+           Drag &amp; drop a .usda file, including animated time samples.</p>
+        <div class="size">WASM 469 KB</div>
     </a>
 </div>
 <div class="footer">Both modules share the same NexusViewport rendering core.</div>
