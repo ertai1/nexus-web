@@ -1,0 +1,5 @@
+{
+	"title": "Sample: rflex_test (RFlex body, SMISES contour)",
+	"model": "rflex.nmesh",
+	"contour": ["rflex_0Body1_FE.srd", "rflex_0Body1_FE.mmx"]
+}
