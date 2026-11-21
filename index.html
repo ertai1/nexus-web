@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nexus Web Viewer</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -10,11 +11,12 @@ body {
     font: 16px/1.6 system-ui, sans-serif;
     display: flex; flex-direction: column; align-items: center;
     justify-content: center; min-height: 100vh; gap: 32px;
+    padding: 32px 16px;
 }
 h1 { color: #eee; font-size: 28px; font-weight: 500; }
 .cards { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
 a.card {
-    display: block; width: 320px; padding: 24px;
+    display: block; width: 320px; max-width: 100%; padding: 24px;
     background: #26262c; border: 1px solid #3a3a41;
     border-radius: 10px; text-decoration: none; color: #ccc;
     transition: border-color 0.15s, background 0.15s;
@@ -42,9 +44,10 @@ a.card:hover { border-color: #58f; background: #2c2c34; }
            Opens a small RFlex sample with its stress contour (4.8 MB) by default.
            Drag &amp; drop a .nmesh with its .ran (and .nmesh.rflex, .nmesh.names) to play rigid, FFlex
            and RFlex motion and name every entity; add .srd/.mmx for stress contours.
-           Keys: F fit, S select zoom, Space play. Scriptable through
+           Keys: F fit, S select zoom, Space play. On a phone, one finger orbits
+           and two fingers zoom and pan. Scriptable through
            window.nexusCommand (camera, entities, pick, names).</p>
-        <div class="size">WASM 753 KB</div>
+        <div class="size">WASM 756 KB</div>
     </a>
     <a class="card" href="usd/">
         <h2>USD module</h2>
